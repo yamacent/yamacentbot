@@ -11,7 +11,7 @@ class TweetContent
 
     "#{now.month}月#{now.day}日は#{now.year}年の#{yday}日目(#{yday_percent}%)\n" +
     "4月1日から#{day_from_origin}日目(#{day_from_origin_percent}%)\n" +
-    "今日もそれなりにがんばろう"
+    "今日もそれなりにがんばろう #{now.strftime('%H:%M:%S')}"
   end
 
   private
