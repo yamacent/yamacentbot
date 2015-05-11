@@ -1,5 +1,5 @@
 require 'twitter'
-require './tweet_content'
+require_relative 'tweet_content'
 
 config = {
   consumer_key:        ENV['CONS_KEY'],
