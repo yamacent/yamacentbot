@@ -8,6 +8,7 @@ config = {
   access_token_secret: ENV['ACCS_SEC'],
 }
 
-client = Twitter::REST::Client.new(config)
-
-client.update(buildTweet)
+if __FILE__ == $PROGRAM_NAME
+  client = Twitter::REST::Client.new(config)
+  client.update(buildTweet)
+end
