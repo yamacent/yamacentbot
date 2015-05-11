@@ -10,5 +10,5 @@ config = {
 
 if __FILE__ == $PROGRAM_NAME
   client = Twitter::REST::Client.new(config)
-  client.update(buildTweet)
+  client.update(TweetContent.buildTweet)
 end
