@@ -1,1 +1,1 @@
-bot: bundle exec ruby tweet.rb
+web: bundle exec ruby app.rb -p $PORT
